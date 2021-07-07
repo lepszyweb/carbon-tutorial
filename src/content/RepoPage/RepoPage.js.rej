@@ -1,0 +1,17 @@
+diff a/src/content/RepoPage/RepoPage.js b/src/content/RepoPage/RepoPage.js	(rejected hunks)
+@@ -62,4 +62,7 @@ const RepoPage = () => {
+-return (
+-  <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
+-    <div className="bx--row repo-page__r1">
+-      <div className="bx--col-lg-16"><RepoTable headers={headers} rows={rows} /></div>
++  return (
++    <div className="bx--grid bx--grid--full-width bx--grid--no-gutter repo-page">
++      <div className="bx--row repo-page__r1">
++        <div className="bx--col-lg-16">
++          <RepoTable headers={headers} rows={rows} />
++        </div>
++      </div>
+@@ -67,2 +70 @@ return (
+-  </div>
+-);
++  );

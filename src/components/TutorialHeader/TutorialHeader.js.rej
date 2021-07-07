@@ -1,0 +1,6 @@
+diff a/src/components/TutorialHeader/TutorialHeader.js b/src/components/TutorialHeader/TutorialHeader.js	(rejected hunks)
+@@ -40,2 +40,2 @@ const TutorialHeader = () => (
+-           <HeaderMenuItem element={Link} to="/repos">
+-          Repozytoria
++          <HeaderMenuItem element={Link} to="/repos">
++            Repozytoria

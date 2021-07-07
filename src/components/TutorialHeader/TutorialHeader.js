@@ -13,51 +13,55 @@ import {
   SideNavItems,
   HeaderSideNavItems,
 } from 'carbon-components-react';
+
 import {
   AppSwitcher20,
   Notification20,
   UserAvatar20,
 } from '@carbon/icons-react';
+
 import { Link } from 'react-router-dom';
 
 const TutorialHeader = () => (
   <HeaderContainer
     render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-      <Header aria-label="Carbon Tutorial">
+      <Header aria-label="Samouczek Carbon">
         <SkipToContent />
         <HeaderMenuButton
-          aria-label="Open menu"
+          aria-label="Otwórz menu"
           onClick={onClickSideNavExpand}
           isActive={isSideNavExpanded}
         />
         <HeaderName element={Link} to="/" prefix="IBM">
-          Carbon Tutorial
+          Samouczek Carbon
         </HeaderName>
-        <HeaderNavigation aria-label="Carbon Tutorial">
+
+        <HeaderNavigation aria-label="Samouczek Carbon">
           <HeaderMenuItem element={Link} to="/repos">
-            Repositories
+            Repozytoria
           </HeaderMenuItem>
         </HeaderNavigation>
+
         <SideNav
-          aria-label="Side navigation"
+          aria-label="Boczna nawigacja"
           expanded={isSideNavExpanded}
           isPersistent={false}>
           <SideNavItems>
             <HeaderSideNavItems>
               <HeaderMenuItem element={Link} to="/repos">
-                Repositories
+                Repozytoria
               </HeaderMenuItem>
             </HeaderSideNavItems>
           </SideNavItems>
         </SideNav>
         <HeaderGlobalBar>
-          <HeaderGlobalAction aria-label="Notifications">
+          <HeaderGlobalAction aria-label="Powiadomienia">
             <Notification20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction aria-label="User Avatar">
+          <HeaderGlobalAction aria-label="Awatar Gucia">
             <UserAvatar20 />
           </HeaderGlobalAction>
-          <HeaderGlobalAction aria-label="App Switcher">
+          <HeaderGlobalAction aria-label="Przełącz App">
             <AppSwitcher20 />
           </HeaderGlobalAction>
         </HeaderGlobalBar>
